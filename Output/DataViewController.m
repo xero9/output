@@ -12,7 +12,10 @@
 
 @end
 
-@implementation DataViewController
+@implementation DataViewController {
+    int numerator;
+    int denominator;
+}
 
 - (void)viewDidLoad
 {
@@ -30,6 +33,33 @@
 {
     [super viewWillAppear:animated];
     self.dataLabel.text = [self.dataObject description];
+}
+
+-(IBAction)clickButton {
+    NSString *myText = @"Hello!";
+    NSNumber *myNumerator = [[NSNumber alloc] initWithInt:(int) 1];
+    NSNumber *myDenominator = [[NSNumber alloc] initWithInt:(int) 3];
+    
+    DataViewController *myFraction;
+    
+    [myFraction setNumerator:[myNumerator intValue]];
+    [myFraction setDenominator:[myDenominator intValue]];
+    [myFraction print];
+    [myLabel setText:myText];
+    
+}
+
+-(void) print {
+    NSLog (@"%i/%i", numerator, denominator);
+}
+
+-(void) setNumerator: (int) n {
+    NSLog(@"Setting the numerator to %i", n);
+    numerator = n;
+}
+
+-(void) setDenominator: (int) d {
+    denominator = d;
 }
 
 @end

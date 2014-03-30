@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DataViewController : UIViewController
+@interface DataViewController : UIViewController {
+    IBOutlet UILabel *myLabel;
+    IBOutlet UIButton *myButton;
+}
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) id dataObject;
+
+-(void) print;
+-(void) setNumerator: (int) n;
+-(void) setDenominator: (int) d;
 
 @end
