@@ -56,7 +56,6 @@
 -(void) setNumerator: (int) n {
     NSLog(@"Setting the numerator to %i", n);
     numerator = n;
-    // Github commit test
 }
 
 -(void) setDenominator: (int) d {
