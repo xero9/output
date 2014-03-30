@@ -2,8 +2,8 @@
 //  ModelController.m
 //  Output
 //
-//  Created by Jonathan Miron on 2014-03-30.
-//  Copyright (c) 2014 Jonathan Miron. All rights reserved.
+//  Created by Jon on 2014-03-30.
+//  Copyright (c) 2014 Jon. All rights reserved.
 //
 
 #import "ModelController.h"
