@@ -49,8 +49,7 @@
 }
 
 -(IBAction) driveVehicle {
-    NSLog(@"Driving vehicle %@", [driveDistance text]);
-    [driveDistance resignFirstResponder];
+    NSLog(@"Driving vehicle");
 }
 
 -(IBAction) leaveField {
