@@ -36,11 +36,13 @@
 }
 
 -(IBAction)clickButton {
+    NSLog(@"Button was clicked");
     NSString *myText = @"Hello!";
     NSNumber *myNumerator = [[NSNumber alloc] initWithInt:(int) 1];
     NSNumber *myDenominator = [[NSNumber alloc] initWithInt:(int) 3];
     
     DataViewController *myFraction;
+    myFraction = [DataViewController alloc];
     
     [myFraction setNumerator:[myNumerator intValue]];
     [myFraction setDenominator:[myDenominator intValue]];
