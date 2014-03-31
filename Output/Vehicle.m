@@ -10,7 +10,7 @@
 
 @implementation Vehicle
 
--(id)initWithVIN: (NSString*) newVIN mpg: (NSNumber*) aMPG {
+-(id)initWithVIN: (NSString*) newVIN mpg: (NSNumber*) theMPG {
     self = [super init];
     if (self) {
         vin = newVIN;
