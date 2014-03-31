@@ -42,10 +42,10 @@
     [myLabel setText:myText];
     
     NSString *theVIN = @"5TDZK5DC2E40092456";
+    NSNumber *theMPG = [[NSNumber alloc] initWithInt:18];
     
-    Vehicle *jonsCorolla = [[Vehicle alloc] initWithVIN:theVIN];
-    
-    
+    Vehicle *jessMatrix = [[Vehicle alloc] initWithVIN:theVIN];
+    Vehicle *jonsCorolla = [[Vehicle alloc] initWithVIN:theVIN] mpg:theMPG];
     
 }
 

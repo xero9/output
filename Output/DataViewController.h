@@ -11,6 +11,8 @@
 @interface DataViewController : UIViewController {
     IBOutlet UILabel *myLabel;
     IBOutlet UIButton *myButton;
+    IBOutlet UIButton *driveVehicle;
+    IBOutlet UITextField *driveDistance;
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
