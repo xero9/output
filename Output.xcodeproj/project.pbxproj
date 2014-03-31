@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33CB18E18E8FBDF009636D0 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CB18D18E8FBDF009636D0 /* Vehicle.m */; };
 		B33CC50918E85DF200F9DDF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CC50818E85DF200F9DDF4 /* Foundation.framework */; };
 		B33CC50B18E85DF200F9DDF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CC50A18E85DF200F9DDF4 /* CoreGraphics.framework */; };
 		B33CC50D18E85DF200F9DDF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CC50C18E85DF200F9DDF4 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B33CB18C18E8FBDF009636D0 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		B33CB18D18E8FBDF009636D0 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		B33CC50518E85DF200F9DDF4 /* Output.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Output.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33CC50818E85DF200F9DDF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B33CC50A18E85DF200F9DDF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B33CB18F18E8FBE5009636D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B33CB18C18E8FBDF009636D0 /* Vehicle.h */,
+				B33CB18D18E8FBDF009636D0 /* Vehicle.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		B33CC4FC18E85DF200F9DDF4 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		B33CC50E18E85DF200F9DDF4 /* Output */ = {
 			isa = PBXGroup;
 			children = (
+				B33CB18F18E8FBE5009636D0 /* Classes */,
 				B33CC51718E85DF200F9DDF4 /* AppDelegate.h */,
 				B33CC51818E85DF200F9DDF4 /* AppDelegate.m */,
 				B33CC51A18E85DF200F9DDF4 /* RootViewController.h */,
@@ -261,6 +274,7 @@
 			files = (
 				B33CC51F18E85DF200F9DDF4 /* DataViewController.m in Sources */,
 				B33CC51918E85DF200F9DDF4 /* AppDelegate.m in Sources */,
+				B33CB18E18E8FBDF009636D0 /* Vehicle.m in Sources */,
 				B33CC52218E85DF200F9DDF4 /* ModelController.m in Sources */,
 				B33CC51518E85DF200F9DDF4 /* main.m in Sources */,
 				B33CC51C18E85DF200F9DDF4 /* RootViewController.m in Sources */,
@@ -472,6 +486,7 @@
 				B33CC53F18E85DF200F9DDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B33CC54018E85DF200F9DDF4 /* Build configuration list for PBXNativeTarget "OutputTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +495,7 @@
 				B33CC54218E85DF200F9DDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

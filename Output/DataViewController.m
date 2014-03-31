@@ -7,6 +7,7 @@
 //
 
 #import "DataViewController.h"
+#import "Vehicle.h"
 
 @interface DataViewController ()
 
@@ -38,16 +39,13 @@
 -(IBAction)clickButton {
     NSLog(@"Button was clicked");
     NSString *myText = @"Hello!";
-    NSNumber *myNumerator = [[NSNumber alloc] initWithInt:(int) 1];
-    NSNumber *myDenominator = [[NSNumber alloc] initWithInt:(int) 3];
-    
-    DataViewController *myFraction;
-    myFraction = [DataViewController alloc];
-    
-    [myFraction setNumerator:[myNumerator intValue]];
-    [myFraction setDenominator:[myDenominator intValue]];
-    [myFraction print];
     [myLabel setText:myText];
+    
+    NSString *theVIN = @"5TDZK5DC2E40092456";
+    
+    Vehicle *jonsCorolla = [[Vehicle alloc] initWithVIN:theVIN];
+    
+    
     
 }
 
