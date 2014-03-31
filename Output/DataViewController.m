@@ -44,9 +44,18 @@
     NSString *theVIN = @"5TDZK5DC2E40092456";
     NSNumber *theMPG = [[NSNumber alloc] initWithInt:18];
     
-    Vehicle *jessMatrix = [[Vehicle alloc] initWithVIN:theVIN];
-    Vehicle *jonsCorolla = [[Vehicle alloc] initWithVIN:theVIN] mpg:theMPG];
-    
+    Vehicle *jessMatrix = [[Vehicle alloc] initWithVIN:theVIN mpg:theMPG];
+    //Vehicle *jonsCorolla = [[Vehicle alloc] initWithVIN:theVIN] mpg:theMPG];
+}
+
+-(IBAction) driveVehicle {
+    NSLog(@"Driving vehicle %@", [driveDistance text]);
+    [driveDistance resignFirstResponder];
+}
+
+-(IBAction) leaveField {
+    [self resignFirstResponder];
+    NSLog(@"Trying to leave field");
 }
 
 -(void) print {

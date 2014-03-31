@@ -10,15 +10,18 @@
 
 @implementation Vehicle
 
--(id)initWithVIN: (NSString*) newVIN mpg: (NSNumber*) theMPG {
+-(id)initWithVIN: (NSString*) newVIN mpg: (NSNumber*) newmpg {
     self = [super init];
     if (self) {
         vin = newVIN;
-        mpg = theMPG;
         fuel = [[NSNumber alloc] initWithInt:100];
         NSLog(@"Creating a new vehicle with VIN %@ and %i percent fuel", newVIN, [fuel intValue]);
     }
     return self;
+}
+
+-(void) driveVehicle {
+    NSLog(@"You are now driving");
 }
 
 @end

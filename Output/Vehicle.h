@@ -14,6 +14,7 @@
     NSNumber *mpg;
 }
 
--(id)initWithVIN: (NSString*) newVIN mpg: (NSNumber*) theMPG;
+-(id)initWithVIN: (NSString*) newVIN mpg: (NSNumber*) thempg;
+-(void) driveVehicle;
 
 @end
